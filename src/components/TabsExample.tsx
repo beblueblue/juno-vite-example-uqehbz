@@ -38,11 +38,12 @@ const TabsExampleView: FunctionComponent<
   console.log(isChanged);
   const [index, setIndex] = useState(0);
   const [value, setValue] = React.useState('tab-0');
+  const [dataArray, setDataArray] = React.useState(tabsData);
   const handleChange = (event: React.ChangeEvent<{}>, value: any) => {
     setValue(value);
   };
 
-  const TabChildren = tabsData.map((tab) => {
+  const TabChildren = dataArray.map((tab) => {
     const { label, value, disabled, ...rest } = tab;
     return (
       <RcTab
@@ -73,6 +74,22 @@ const TabsExampleView: FunctionComponent<
         }}
       >
         click
+      </RcButton>
+      <RcButton
+        onClick={() => {
+          setDataArray([...tabsData, {
+            label: 'Tab new', value: 'tab-new', 'data-test-automation-id': 'tab-test-new'
+          }]);
+        }}
+      >
+        addData
+      </RcButton>
+      <RcButton
+        onClick={() => {
+          setDataArray(tabsData);
+        }}
+      >
+        resetData
       </RcButton>
     </>
   );
