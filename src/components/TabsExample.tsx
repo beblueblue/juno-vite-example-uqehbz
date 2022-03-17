@@ -10,8 +10,13 @@ import { FunctionComponent } from 'react';
 
 export interface TabsExampleProps {}
 
+const Label = ({title}: {title: string}) => {
+  const [count, setCount] = useState('1');
+  return <div onClick={() => setCount(count + '000')}>{`${title + count}`}</div>
+}
+
 const tabsData = [
-  { label: 'Tab 0', value: 'tab-0', 'data-test-automation-id': 'tab-test-0' },
+  { label: <Label title={'Click me, Tab 0'}></Label>, value: 'tab-0', 'data-test-automation-id': 'tab-test-0' },
   { label: 'Tab 1', value: 'tab-1', 'data-test-automation-id': 'tab-test-1' },
   { label: 'Tab 2', value: 'tab-2', 'data-test-automation-id': 'tab-test-2' },
   { label: 'Tab 3', value: 'tab-3', 'data-test-automation-id': 'tab-test-3' },
@@ -47,8 +52,8 @@ const TabsExampleView: FunctionComponent<
     const { label, value, disabled, ...rest } = tab;
     return (
       <RcTab
-        key={label}
-        label={`${label}${index}${isChanged}`}
+        key={value}
+        label={label}
         value={value}
         disabled={disabled}
         {...rest}
