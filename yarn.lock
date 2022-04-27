@@ -394,18 +394,18 @@
     prop-types "^15.7.2"
     react-is "^16.8.0 || ^17.0.0"
 
-"@ringcentral/juno-icon@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@ringcentral/juno-icon/-/juno-icon-1.0.1.tgz#937d37d9d1cb6840dd1db061608a6c412806fec9"
-  integrity sha512-cdfeWQmRTMjIYty7GP82GRuC/t6Cd949yWvF12TAWJwmp0ulwud34O6xfeyzdmI13/GG9Vz/U79X3QdyhgYArA==
+"@ringcentral/juno-icon@1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@ringcentral/juno-icon/-/juno-icon-1.2.1.tgz#9fe25b2e28a65b9ba8e5269b6faeecb48eb68b02"
+  integrity sha512-DSKKUmEUhc29+tBddPE0cyFu15Z9S9sZzd3Jx1tamgbwvSJxqVWJazltPfRKKgWapAsHKnzQc423w2cpjiAqFg==
   dependencies:
     "@material-ui/core" "^4.12.3"
     tslib ">=2.0.0"
 
-"@ringcentral/juno@2.1.1":
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/@ringcentral/juno/-/juno-2.1.1.tgz#85097a833ab0f1a6d2390d10381a7dee2b60ab0b"
-  integrity sha512-0TMGW1hAruGxRuWiPcvlz3yordxRw9mRDEefDEfB7AVk7yj2LlF9iWuz3VDDR332PTs/m2YrZLbkhUJq7tHY0g==
+"@ringcentral/juno@2.10.0":
+  version "2.10.0"
+  resolved "https://registry.yarnpkg.com/@ringcentral/juno/-/juno-2.10.0.tgz#e4170135575b4831b8ce8158aa6925c2f2f1da5a"
+  integrity sha512-xhXSo0pfyI21pPTiTV3UQkgFoKPP31glSmPzZgzh43F/likAv+7l6SqmcgfmqLHuPXFU4f8ewaScRAgumy6nRg==
   dependencies:
     "@date-io/moment" "^1.3.11"
     "@material-ui/core" "^4.12.3"
@@ -419,9 +419,10 @@
     focus-visible "^5.1.0"
     lodash "^4.17.21"
     react-beautiful-dnd "^13.0.0"
-    react-virtuoso "^1.9.3"
+    react-virtuoso "^2.8.3"
     resize-observer-polyfill "^1.5.1"
     tslib ">=2.0.0"
+    type-fest "^2.12.2"
     typeface-lato "^0.0.75"
 
 "@rollup/pluginutils@^4.1.2":
@@ -515,17 +516,22 @@
   dependencies:
     "@types/react" "*"
 
-"@virtuoso.dev/react-urx@^0.2.5":
-  version "0.2.12"
-  resolved "https://registry.yarnpkg.com/@virtuoso.dev/react-urx/-/react-urx-0.2.12.tgz#6c75cdbea2503c129b34d1ce2ee8cd649503b47c"
-  integrity sha512-Lcrrmq/UztM+rgepAdThdIk8dL3LEi9o2NTkL6ZLKPrTGjr5tSmsauD30/O8yu7Q0ncDnptmMR3OObdvMGuEKQ==
+"@virtuoso.dev/react-urx@^0.2.12":
+  version "0.2.13"
+  resolved "https://registry.yarnpkg.com/@virtuoso.dev/react-urx/-/react-urx-0.2.13.tgz#e2cfc42d259d2a002695e7517d34cb97b64ee9c4"
+  integrity sha512-MY0ugBDjFb5Xt8v2HY7MKcRGqw/3gTpMlLXId2EwQvYJoC8sP7nnXjAxcBtTB50KTZhO0SbzsFimaZ7pSdApwA==
   dependencies:
-    "@virtuoso.dev/urx" "^0.2.12"
+    "@virtuoso.dev/urx" "^0.2.13"
 
-"@virtuoso.dev/urx@^0.2.12", "@virtuoso.dev/urx@^0.2.5":
+"@virtuoso.dev/urx@^0.2.12":
   version "0.2.12"
   resolved "https://registry.yarnpkg.com/@virtuoso.dev/urx/-/urx-0.2.12.tgz#fa9bd1a2777cf70b19d4c9836b8d92b04f079c64"
   integrity sha512-Q9nlRqYb5Uq4Ynu8cWPSJ7LxpuZsI+MZ09IJlDAAgwuNgfWRArpVRP0VN0coYgUo2fKMjhmV69MTqaUbIBhu/g==
+
+"@virtuoso.dev/urx@^0.2.13":
+  version "0.2.13"
+  resolved "https://registry.yarnpkg.com/@virtuoso.dev/urx/-/urx-0.2.13.tgz#a65e7e8d923cb03397ac876bfdd45c7f71c8edf1"
+  integrity sha512-iirJNv92A1ZWxoOHHDYW/1KPoi83939o83iUBQHIim0i3tMeSKEh+bxhJdTHQ86Mr4uXx9xGUTq69cp52ZP8Xw==
 
 "@vitejs/plugin-react@^1.0.7":
   version "1.2.0"
@@ -1114,14 +1120,13 @@ react-transition-group@^4.0.0, react-transition-group@^4.4.0:
     loose-envify "^1.4.0"
     prop-types "^15.6.2"
 
-react-virtuoso@^1.9.3:
-  version "1.11.1"
-  resolved "https://registry.yarnpkg.com/react-virtuoso/-/react-virtuoso-1.11.1.tgz#350dc88866b3f42cb396bf8f40b90efc6daaadde"
-  integrity sha512-NH8eLLmoowdq0x7/AEfXxOY9OY4PDpLuPPmCc8F2IoBQLvIcMait3A2TnR0fT9UT+gl8n7GHoORzeGqF5Ka0MA==
+react-virtuoso@^2.8.3:
+  version "2.10.1"
+  resolved "https://registry.yarnpkg.com/react-virtuoso/-/react-virtuoso-2.10.1.tgz#3c88070dad59422cfbf9ff7b7c771e123173cff0"
+  integrity sha512-r5t65uEdkbO2Jijlafus8IQpM8ngFUTAg5gDVtBqoyY+mF5ZJ5X8SdWlfUXUdGsqqSp8/5PKNi+UuW3aeWfEgA==
   dependencies:
-    "@virtuoso.dev/react-urx" "^0.2.5"
-    "@virtuoso.dev/urx" "^0.2.5"
-    resize-observer-polyfill "^1.5.1"
+    "@virtuoso.dev/react-urx" "^0.2.12"
+    "@virtuoso.dev/urx" "^0.2.12"
 
 react@^17.0.2:
   version "17.0.2"
@@ -1251,6 +1256,11 @@ tslib@>=2.0.0:
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.3.1.tgz#e8a335add5ceae51aa261d32a490158ef042ef01"
   integrity sha512-77EbyPPpMz+FRFRuAFlWMtmgUWGe9UOG2Z25NqCwiIjRhOf5iKGuzSe5P2w1laq+FkRy4p+PCuVkJSGkzTEKVw==
+
+type-fest@^2.12.2:
+  version "2.12.2"
+  resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-2.12.2.tgz#80a53614e6b9b475eb9077472fb7498dc7aa51d0"
+  integrity sha512-qt6ylCGpLjZ7AaODxbpyBZSs9fCI9SkL3Z9q2oxMBQhs/uyY+VD8jHA8ULCGmWQJlBgqvO3EJeAngOHD8zQCrQ==
 
 typeface-lato@^0.0.75:
   version "0.0.75"
