@@ -6,6 +6,7 @@ import { DataCard } from './components/DataCard';
 import { FullDialer } from './components/Dialer';
 import { TabsExample } from './components/TabsExample';
 import { TabListExample } from './components/TabListExample';
+import { IconButtonExample } from './components/IconButtonExample';
 
 const App = () => {
   return (
@@ -20,7 +21,8 @@ const App = () => {
       <br />
       <CustomSnackbarContent />
       <br /> */}
-      <TabListExample />
+      {/* <TabListExample /> */}
+      <IconButtonExample />
     </RcThemeProvider>
   );
 };
